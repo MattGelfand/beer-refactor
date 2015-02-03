@@ -1,4 +1,4 @@
-body {
+/*body {
 	color: #444;
 	font-family: Tahoma,Geneva,sans-serif;
 	font-size: 13px;
@@ -91,7 +91,7 @@ h1{
 	text-align: center;
 }
 .timeline-content h3{
-	/*text-align: center;*/
+	
 }
 .timeline-content img{
 	height: 200px;
@@ -101,8 +101,8 @@ h1{
 
 .clear:before,
 .clear:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";  
+    display: table;  
 }
 
 .clear:after {
@@ -143,3 +143,4 @@ h1{
 	padding-top: 20px;
 	border-top: 2px solid #999999;
 }
+*/

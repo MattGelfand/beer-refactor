@@ -1,4 +1,4 @@
-* {
+/** {
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	font-smoothing: antialiased;
@@ -20,7 +20,7 @@ img.logo {
 #beer {
 	padding-top:35px;
 }
-/*Photos and Videos*/
+
 
 #beer #lakefront-video {
 	float: right;
@@ -68,10 +68,7 @@ img.logo {
 }
 
 #beer #video_background.video {
-	float: none;
 	width: 100%;
-	margin: -2em;
-	padding: 0;
 }
 
 #beer #title-image.row {
@@ -84,8 +81,7 @@ img.logo {
 	display: none;
 	margin-left:20px;
 	right:325px;
-	/*right: 322px;*/
-	/*background-color: rgba(255, 255, 255, 0.5);*/
+	
 }
 #beer #hed {
 	width:100%;
@@ -177,7 +173,7 @@ img.logo {
 	/*transition: 0.5s all;
 	-moz-transition: 0.5s all;
 	-webkit-transition: 0.5s all;
-	*/
+	
 	border: 10px solid #171716;
 	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
@@ -187,12 +183,10 @@ img.logo {
 
 #beer .img-circle:hover {
 	opacity: 1;
-	/*transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	*/
+
 }
 
-/*End Photo and Video*/
+
 
 
 
@@ -221,7 +215,7 @@ body {
 }
 
 
-/*Spans*/
+ 
 
 #beer span {
 	font-size: 90px;
@@ -330,7 +324,7 @@ body {
 	top: 37px;
 }
 
-/*End spans*/
+ 
 
 #beer p {
 	font-size: .9em;
@@ -395,7 +389,7 @@ body {
 	margin: 0 auto;
 }
 
-/*Modal Stuff*/
+ 
 
 #beer h2.modal-head {
 	font-family: 'Impact Label';
@@ -415,7 +409,7 @@ body {
 	color: black;
 }
 
-/*Modal*/
+ 
 #beer .modal-sidebar {
 	float: right;
 	width: 400px;
@@ -434,7 +428,7 @@ body {
 	padding: .5em 1em .5em 1em;
 }
 
-/*End Modal Stuff*/
+ 
 
 #beer h3 {
 	font-family: Fjalla One;
@@ -477,18 +471,9 @@ position: absolute;
 border: none;
 text-align: center;
 }
-*/
 
-#beer h4 {
-	font-family: 'Fjalla One', sans-serif;
-	font-size: 94px;
-	color: white;
-	padding: .1em;
-	font-weight: 100;
-	text-shadow: 2px 5px 3px #000000;
-	background: #2c3d82;
-	/*background:rgba(0,0,128,.5);*/
-	width: 72%;
+
+
 }
 
 #beer a {
@@ -556,7 +541,7 @@ overflow-y: hidden;
 margin-bottom: 50px;
 padding-bottom: 10px;
 }
-*/
+
 
 #beer #row1 {
 	margin: 0 auto;
@@ -566,7 +551,7 @@ padding-bottom: 10px;
 }
 
 
-/*LAKEFRONT*/
+
 
 #beer #lakefront {
 	background: url(../img/section/lakefront-section.jpg) no-repeat;
@@ -589,7 +574,7 @@ padding-bottom: 10px;
 	padding: 24%;
 }
 
-/*MILLERCOORS*/
+ 
 
 #beer #millerCoors {
 	background: url(../img/section/miller-section.jpg) no-repeat;
@@ -609,7 +594,7 @@ padding-bottom: 10px;
 #beer #millerCoors.row {
 	padding: 24%;
 }
-/* MILWAUKEE */
+ 
 
 #beer #mkb {
 	background: url(../img/section/mkb-section.jpg) no-repeat;
@@ -631,7 +616,7 @@ padding-bottom: 10px;
 	padding: 24%;
 }
 
-/*TEMPERANCE*/
+ 
 
 #beer #temperance {
 	background: url(../img/section/temperance-section.jpg) no-repeat;
@@ -653,7 +638,7 @@ padding-bottom: 10px;
 	padding: 24%;
 }
 
-/* POLLYANNA */
+ 
 
 #beer #pollyanna {
 	background: url(../img/section/pollyanna-section.jpg) no-repeat;
@@ -674,9 +659,7 @@ padding-bottom: 10px;
 	padding: 24%;
 }
 
-/*----------------------End of Stories-------------------*/
-
-/*Smooth scrolling arrow*/
+ 
 #beer .fa-arrow-up {
 	position: fixed;
 	bottom: 15px;
@@ -690,13 +673,7 @@ padding-bottom: 10px;
 #beer .fa-arrow-up:hover {
 	color: #768585;
 }
-
-/*===================End Modal====================*/
-
-
-/*Slideshow*/
-
-/* Prevents slides from flashing */
+ 
 #beer #slides {
 	display: none;
 	width: 400px;
@@ -723,9 +700,7 @@ padding-bottom: 10px;
 	display: none;
 }
 
-/*=============================End Slideshow=========================*/
-
-/*Slide-up captions*/
+ 
 
 #beer h2 {
 	font-size: 15px;
@@ -780,9 +755,4 @@ padding-bottom: 10px;
 
 /*=====End Captions*/
 
-@media screen and (max-width: 50em) {
-	#beer header img {
-		display: none;
-	}
-
-}
+ 
