@@ -107,16 +107,16 @@ NORMALIZE.css
 		position: absolute;
 		top: 50%;
 		left: 50%;
- 		background: rgba(255,255,255,.7);
+ 		background: #fff;
 		color: #222;
 		text-align: center;
 		border-radius: 4px;
+		max-width: 540px;
 		-webkit-transform:translate(-50%, -50%);
 		-moz-transform:translate(-50%, -50%);
 		-ms-transform:translate(-50%, -50%);
 		-o-transform:translate(-50%, -50%);
 		transform:translate(-50%, -50%);
-		z-index: 2;
 
 		-webkit-animation: fadeIn 1.2s ease-in;
 		-moz-animation: fadeIn 1.2s ease-in;
@@ -152,33 +152,15 @@ NORMALIZE.css
 		  }
 		}
 
-
-
-	.byline {
-		position: absolute;
-		top: 8%;
-		left: 8%;
-		color: #fff;
-	}
-
-	.homelink {
-		position: fixed;
-		top: 0;
-		left: 0;
- 		padding: 1em;
- 		z-index: 2;
- 		background: pink;
-
-	}
-
 	/* Main */
 
 	.main {
-		min-height: 100vh;
-		background: rgba(265,162,26,1);
+
  	} 
 
 	.faces-container {
+		text-align: center;
+		overflow: hidden;
  	}
 
 
@@ -187,9 +169,14 @@ NORMALIZE.css
 		max-width: 50%;
 		margin-right: -3px;
 		opacity: .6;
+		background: transparent;
 		margin-bottom: -6px;
 		overflow: hidden;
 		position: relative;
+	}
+
+	.faces a:last-child {
+		cursor: default;
 	}
 
 	.faces a:hover > img,
@@ -212,7 +199,7 @@ NORMALIZE.css
 		left: -100%;
 		right: 0;
 		bottom: 0;
-		height: 99%;
+		height: 99.5%;
 		width: 100%;
 		text-align: center;
 		padding-top: 7em;
@@ -243,6 +230,11 @@ NORMALIZE.css
  		background: rgba(24,99,166,.9);
  	}
 
+ 	.faces-overlay p {
+ 		max-width: 90%;
+ 		margin: 0 auto;
+ 	}
+
  	.faces-overlay p:first-child {
  		padding-bottom: 1.6em;
  	}
@@ -261,21 +253,6 @@ NORMALIZE.css
 		width:50px;
 		padding-top: 1.6em;
 		text-align: center;
-	}
-
-	.main-right {
-		position: relative;
-		z-index: 3;
-		background: white;
-	}
-
-	.main-left {
-		text-align: center;
-	}
-
-	.main-left-inner {
-		padding: 1.6em;
-		border: none;
 	}
 
 	.spaced-head, .arrow-right {
@@ -307,15 +284,17 @@ NORMALIZE.css
 
 	.header-small {
 		font-weight: 900;
-		font-size: .9em;
+		font-size: 1.9em;
 		text-align: center;
-		letter-spacing: 9px;
+		letter-spacing: 11px;
 		margin: 0;
 	}
 
 	.subhead {
-		font-size: .9em;
-		font-weight: 300;
+		font-size: 1.5em;
+		font-family: 'Crimson Text', serif;
+		font-weight: 200;
+		font-style: italic;
 	}
 
 
@@ -335,10 +314,6 @@ NORMALIZE.css
 		padding: 0 2em;
 	}
 
-	.graph-spacing {
-		margin: 0 0 3.2em 0;
-	}
-
 	.divider {
 		text-align: center;
 		padding: 2.4em;
@@ -354,6 +329,7 @@ NORMALIZE.css
 		-o-transform: scale(-1, 1);
 		-ms-transform: scale(-1, 1);
 		transform: scale(-1, 1);
+		color: #cba55d;
 	}
 
 
@@ -364,53 +340,53 @@ NORMALIZE.css
 	@media (min-width: 60rem) {
   
 	.column {
-	float: left;
-	padding-left: 1rem;
-	padding-right: 1rem;
+		float: left;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 
 	.column.full { 
-	width: 100%; 
+		width: 100%; 
 	}
 
 	.column.two-thirds { 
-	width: 66.7%; 
+		width: 66.7%; 
 	}
 
 	.column.half { 
-	width: 50%; 
+		width: 50%; 
 	}
 
 	.column.third { 
-	width: 33.3%; 
+		width: 33.3%; 
 	}
 
 	.column.fourth { 
-	width: 25%; 
+		width: 25%; 
 	}
 
 	.column.flow-opposite { 
-	float: right; 
-	}
-
-	.header-fancy {
-		line-height: 1;
-		font-size: 1.4em;
-		font-weight: 800;
+		float: right; 
 	}
 
 	.main {
-		padding: 1em;
-		background: #fff;
-	}
-
-	.main-right {
-		padding-right: 0 !important;
+		min-height: 100vh;
+		position: relative;
 	}
 
 	.main-left {
-		border: 1px solid black;
-		padding: 1em;
+		text-align: left;
+		background: url('../img/mooning_pattern.png') 0 0 no-repeat;
+		position: absolute;
+		padding: 3.6em;
+		top: 0;
+		bottom: 0;
+	}
+
+	.main-right {
+		padding: 0 !important;
+		float: right;
+		margin-right: 2px;
 	}
 
 	.spaced-head {
@@ -438,8 +414,22 @@ NORMALIZE.css
 
 	/* Font Styles */
 
+	.header-fancy {
+		line-height: 1;
+		font-size: 1.5em;
+		text-align: center;
+		font-weight: 800;
+	}
+
 	.graph {
-		font-size: 1.6em;
+		font-size: 1.3em;
+	}
+
+	.subhead {
+		max-width: 350px;
+		margin: 0 auto;
+		font-size: 1.3em;
+		opacity: .9;
 	}
 }
 

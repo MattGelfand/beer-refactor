@@ -47,7 +47,7 @@ $(function() {
 
 
 
-// AnimationHover('header','tada');
+/* AnimationHover('header','tada')
 
 function animationHover('element', animation){
   'element' = $('element');
